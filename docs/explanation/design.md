@@ -20,14 +20,14 @@ This is in contrast to what the plugin has historically offered in terms of func
 ### UNIX Philosphy
 
 1. Write programs that do one thing and do it well.
-    - Do colors, and do colors well. Other things like displaying the weather
-    are not the responsibility of this plugin.
+   - Do colors, and do colors well. Other things like displaying the weather
+     are not the responsibility of this plugin.
 1. Write programs to work together.
-    - The full palette is exposed as user options, allowing
-    easy integration with any other kind of tmux configuration.
+   - The full palette is exposed as user options, allowing
+     easy integration with any other kind of tmux configuration.
 1. Write programs to handle text streams, because that is a universal interface.
-    - TMUX is a text based program. Each of the palette options are strings
-    in user options that can be piped into other programs and options.
+   - TMUX is a text based program. Each of the palette options are strings
+     in user options that can be piped into other programs and options.
 
 ### Configurability is the root of all evil
 
