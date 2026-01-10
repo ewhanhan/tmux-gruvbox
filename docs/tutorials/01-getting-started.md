@@ -3,10 +3,12 @@ Want to install the color scheme and make tmux pastel? Great! Here's how.
 ## Step 1: Clone this repository
 
 <!-- x-release-please-start-version -->
+
 ```bash
-mkdir -p ~/.config/tmux/plugins/catppuccin
-git clone -b v2.1.3 https://github.com/catppuccin/tmux.git ~/.config/tmux/plugins/catppuccin/tmux
+mkdir -p ~/.config/tmux/plugins
+git clone -b v3.0.0 https://github.com/ewhanhan/tmux-gruvbox.git ~/.config/tmux/plugins/tmux-gruvbox
 ```
+
 <!-- x-release-please-end -->
 
 ## Step 2: Edit your tmux configuration file
@@ -16,12 +18,12 @@ Using your favourite editor, edit the file `~/.tmux.conf`.
 It should look like this:
 
 ```bash
-set -g @catppuccin_flavor 'mocha'
+set -g @gruvbox_flavor 'dark'
 
-run ~/.config/tmux/plugins/catppuccin/tmux/catppuccin.tmux
+run ~/.config/tmux/plugins/tmux-gruvbox/gruvbox.tmux
 ```
 
-This will load the catppuccin plugin and apply the defaults.
+This will load the gruvbox plugin and apply the defaults.
 To apply the changes to your configuration file, exit tmux completely
 and start it again. You can also run `tmux source ~/.tmux.conf`, but this may
 not work as well when changing options.
@@ -32,14 +34,14 @@ The default configuration looks a little bland. Let's change it to
 be a bit more colorful. Edit your tmux config again so it looks like this.
 
 ```bash
-# Pick a softer palette.
-set -g @catppuccin_flavor 'frappe'
+# Set the flavor (dark is the default and only available option).
+set -g @gruvbox_flavor 'dark'
 
-run ~/.config/tmux/plugins/catppuccin/tmux/catppuccin.tmux
+run ~/.config/tmux/plugins/tmux-gruvbox/gruvbox.tmux
 
 # Make the status line more pleasant.
 set -g status-left ""
-set -g status-right '#[fg=#{@thm_crust},bg=#{@thm_teal}] session: #S '
+set -g status-right '#[fg=#{@thm_bg_dim},bg=#{@thm_aqua}] session: #S '
 
 # Ensure that everything on the right side of the status line
 # is included.
@@ -59,9 +61,9 @@ in the man page, but the tl;dr is that they control what appears on the left
 and right of the status line.
 
 The `#[]` syntax is an embedded style, similar to inline css.
-`fg=#{@thm_crust}` says "make the text the crust color". `@thm_crust` is a
+`fg=#{@thm_bg_dim}` says "make the text the bg_dim color". `@thm_bg_dim` is a
 user option set by the plugin. It is created by the line
-`run ~/.config/tmux/plugins/catppuccin/tmux/catppuccin.tmux`, so if you try
+`run ~/.config/tmux/plugins/tmux-gruvbox/gruvbox.tmux`, so if you try
 and use colors before that line, it won't work. The `#S` is a special sequence
 that tmux replaces with the current session name. There are a long, long
 "[list of special sequences](https://man7.org/linux/man-pages/man1/tmux.1.html#FORMATS)"
