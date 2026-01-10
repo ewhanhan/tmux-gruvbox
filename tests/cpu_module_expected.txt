@@ -1,1 +1,1 @@
-E:@gruvbox_status_cpu #[fg=#fabd2f]▐#[fg=#1d2021,bg=#fabd2f] #[fg=#{cpu_fg_color},bg=#{cpu_bg_color}] #{cpu_percentage}#[fg=#{cpu_bg_color}]
+E:@gruvbox_status_cpu #[fg=#fabd2f]▐#[fg=#1d2021,bg=#fabd2f]󰓅 #[fg=#{cpu_fg_color},bg=#{cpu_bg_color}] #{cpu_percentage}#[fg=#{cpu_bg_color}]
