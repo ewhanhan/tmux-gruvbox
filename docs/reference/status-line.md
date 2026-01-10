@@ -161,6 +161,21 @@ run ~/.config/tmux/plugins/tmux-gruvbox/gruvbox.tmux
 set -agF status-right "#{E:@gruvbox_status_load}"
 ```
 
+## Memory Pressure module
+
+Displays memory usage percentage on macOS. This module uses the `memory_pressure`
+command which is only available on macOS.
+
+**Requirements:** macOS only (uses the `memory_pressure` command)
+
+**Configure:**
+
+```sh
+run ~/.config/tmux/plugins/tmux-gruvbox/gruvbox.tmux
+
+set -agF status-right "#{E:@gruvbox_status_memory_pressure}"
+```
+
 ## Gitmux module
 
 **Requirements:** This module depends on [gitmux](https://github.com/arl/gitmux).
