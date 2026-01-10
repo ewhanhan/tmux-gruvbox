@@ -131,7 +131,6 @@ run ~/.config/tmux/plugins/tmux-plugins/tmux-battery/battery.tmux
 
 - [Status Line](./docs/reference/status-line.md)
 - [Configuration Options Reference](./docs/reference/configuration.md)
-- [Tmux Configuration Showcase](https://github.com/ewhanhan/tmux-gruvbox/discussions)
 
 ## Attribution
 
