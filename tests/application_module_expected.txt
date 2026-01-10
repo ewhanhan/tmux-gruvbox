@@ -1,1 +1,1 @@
-@gruvbox_status_application #[fg=#cc241d]#[fg=#1d2021,bg=#cc241d] #[fg=#ebdbb2,bg=#32302f]#{E:@gruvbox_application_text}#[fg=#32302f]
+@gruvbox_status_application #[fg=#cc241d]▐#[fg=#1d2021,bg=#cc241d] #[fg=#ebdbb2,bg=#32302f]#{E:@gruvbox_application_text}#[fg=#32302f]

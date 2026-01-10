@@ -1,1 +1,1 @@
-@gruvbox_status_battery #[fg=#928374]#[fg=#1d2021,bg=#928374]#{l:#{battery_icon}} #[fg=#ebdbb2,bg=#32302f]#{E:@gruvbox_battery_text}#[fg=#32302f]
+@gruvbox_status_battery #[fg=#928374]▐#[fg=#1d2021,bg=#928374]#{l:#{battery_icon}} #[fg=#ebdbb2,bg=#32302f]#{E:@gruvbox_battery_text}#[fg=#32302f]
