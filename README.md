@@ -81,11 +81,6 @@ set -gF window-status-format "#[bg=#{@grv_surface_1},fg=#{@grv_fg}] ##I ##T "
 set -gF window-status-current-format "#[bg=#{@grv_purple},fg=#{@grv_crust}] ##I ##T "
 ```
 
-### Upgrading from v0.3
-
-Breaking changes have been introduced since 0.3, to understand how to migrate
-your configuration, see the [upstream migration guide](https://github.com/catppuccin/tmux/issues/487).
-
 ## Recommended Default Configuration
 
 This configuration shows some customisation options, that can be further
