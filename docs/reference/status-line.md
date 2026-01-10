@@ -237,3 +237,23 @@ set -agF status-right "#{E:@gruvbox_status_kube}"
 set -g @plugin 'tony-sol/tmux-kubectx'
 run '~/.tmux/plugins/tpm/tpm'
 ```
+
+## Prefix Highlight module
+
+Shows a visual indicator when tmux is in prefix, copy, or synchronized pane mode.
+
+**Configure:**
+
+```sh
+run ~/.config/tmux/plugins/tmux-gruvbox/gruvbox.tmux
+
+set -g status-left "#{E:@gruvbox_status_prefix_highlight}"
+```
+
+### Mode priority
+
+When multiple modes are active, only one indicator shows:
+
+1. **Prefix** (highest) - prefix key pressed
+2. **Copy** - copy/scroll mode active
+3. **Sync** (lowest) - panes synchronized (hidden if single pane)
