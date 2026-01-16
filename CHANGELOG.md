@@ -4,6 +4,15 @@
 > For historical changes prior to the Gruvbox fork, see the
 > [upstream changelog](https://github.com/catppuccin/tmux/blob/main/CHANGELOG.md).
 
+## [3.2.0](https://github.com/ewhanhan/tmux-gruvbox/compare/v3.1.0...v3.2.0) (2026-01-16)
+
+
+### Added
+
+* **status:** add memory_pressure module and refactor cpu module ([243d1fb](https://github.com/ewhanhan/tmux-gruvbox/commit/243d1fb4ff3956a2f95417aa01cd68954bd87985))
+* **themes:** add bg_visual_* colors for visual selection backgrounds ([0cd7109](https://github.com/ewhanhan/tmux-gruvbox/commit/0cd710908b4b3bab5a45651c1f3a5d5cfa8a723c))
+* **themes:** add material_dark flavor based on gruvbox-material ([7ed7dc1](https://github.com/ewhanhan/tmux-gruvbox/commit/7ed7dc1c6cb96368043fd5ed47e57fd0c5f34040))
+
 ## [3.1.0](https://github.com/ewhanhan/tmux-gruvbox/compare/v3.0.0...v3.1.0) (2026-01-10)
 
 

@@ -6,7 +6,7 @@ Want to install the color scheme and make tmux pastel? Great! Here's how.
 
 ```bash
 mkdir -p ~/.config/tmux/plugins
-git clone -b v3.1.0 https://github.com/ewhanhan/tmux-gruvbox.git ~/.config/tmux/plugins/tmux-gruvbox
+git clone -b v3.2.0 https://github.com/ewhanhan/tmux-gruvbox.git ~/.config/tmux/plugins/tmux-gruvbox
 ```
 
 <!-- x-release-please-end -->
