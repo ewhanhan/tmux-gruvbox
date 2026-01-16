@@ -136,3 +136,5 @@ run ~/.config/tmux/plugins/tmux-plugins/tmux-battery/battery.tmux
 
 This project is a fork of [catppuccin/tmux](https://github.com/catppuccin/tmux),
 adapted with Gruvbox colors. Thanks to the original Catppuccin contributors.
+
+The `material_dark` flavor uses colors from [gruvbox-material](https://github.com/sainnhe/gruvbox-material) by sainnhe.

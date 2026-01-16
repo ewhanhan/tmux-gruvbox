@@ -6,9 +6,9 @@ This is a diagram of how the theme is split between its components.
 
 ### Top Level Options
 
-| Option            | Effect                                                       |
-| ----------------- | ------------------------------------------------------------ |
-| `@gruvbox_flavor` | Sets the gruvbox flavor. Currently only "dark" is available. |
+| Option            | Effect                                                                                                                                                           |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `@gruvbox_flavor` | Sets the gruvbox flavor. Available options: `dark` (default), `material_dark` ([gruvbox-material](https://github.com/sainnhe/gruvbox-material) medium contrast). |
 
 ### Status Line
 
