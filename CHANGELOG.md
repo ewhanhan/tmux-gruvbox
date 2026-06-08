@@ -4,6 +4,13 @@
 > For historical changes prior to the Gruvbox fork, see the
 > [upstream changelog](https://github.com/catppuccin/tmux/blob/main/CHANGELOG.md).
 
+## [3.2.1](https://github.com/ewhanhan/tmux-gruvbox/compare/v3.2.0...v3.2.1) (2026-06-08)
+
+
+### Performance Improvements
+
+* **status:** use native #{USER} instead of forking whoami each refresh ([#3](https://github.com/ewhanhan/tmux-gruvbox/issues/3)) ([b3601eb](https://github.com/ewhanhan/tmux-gruvbox/commit/b3601ebbe488f8644c172725cae72f1cbd098f58))
+
 ## [3.2.0](https://github.com/ewhanhan/tmux-gruvbox/compare/v3.1.0...v3.2.0) (2026-01-16)
 
 
