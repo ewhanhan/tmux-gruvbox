@@ -272,3 +272,49 @@ When multiple modes are active, only one indicator shows:
 1. **Prefix** (highest) - prefix key pressed
 2. **Copy** - copy/scroll mode active
 3. **Sync** (lowest) - panes synchronized (hidden if single pane)
+
+## Nested session / SSH module
+
+Shows a badge **only** when the current tmux session is remote or nested, and
+nothing at all on a plain local top-level session. This makes stacked status
+bars — for example a local tmux plus a tmux running on a remote host over SSH —
+easy to tell apart at a glance.
+
+The module is self-gating, so add it unconditionally; it only appears when
+relevant:
+
+```sh
+run ~/.config/tmux/plugins/tmux-gruvbox/gruvbox.tmux
+
+set -ag status-left "#{E:@gruvbox_status_nest}"
+# ...or on the right
+set -ag status-right "#{E:@gruvbox_status_nest}"
+```
+
+Use `set -ag` here, not `set -agF`: like the prefix highlight module this one is
+conditional, and the `-F` flag would evaluate (and freeze) the badge at
+config-load time instead of letting it re-evaluate live.
+
+### States
+
+The state is detected from the environment with no shell calls:
+
+| State  | When                                                | Default badge        |
+| ------ | --------------------------------------------------- | -------------------- |
+| remote | `SSH_CONNECTION` is set (server started inside SSH) | red `󰣀 <short-host>` |
+| nested | `$TMUX` is set (server started inside another tmux) | aqua `󰪥`             |
+| local  | neither                                             | _(empty)_            |
+
+`SSH_CONNECTION` is used rather than `SSH_TTY` because `ssh` always sets it (with
+or without a tty) and tmux keeps it fresh via `update-environment`.
+
+### Options
+
+| Option                       | Default        | Description                                    |
+| ---------------------------- | -------------- | ---------------------------------------------- |
+| `@gruvbox_nest_remote_icon`  | `󰣀`            | Icon shown when remote                         |
+| `@gruvbox_nest_remote_text`  | `" #h"`        | Text after the remote icon (`#h` = short host) |
+| `@gruvbox_nest_remote_color` | `#{@thm_red}`  | Background color when remote                   |
+| `@gruvbox_nest_nested_icon`  | `󰪥`            | Icon shown when nested                         |
+| `@gruvbox_nest_nested_text`  | _(empty)_      | Text after the nested icon                     |
+| `@gruvbox_nest_nested_color` | `#{@thm_aqua}` | Background color when nested                   |

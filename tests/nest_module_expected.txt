@@ -1,0 +1,2 @@
+
+@gruvbox_status_nest #{?SSH_CONNECTION,#[fg=#1d2021]#[bg=#fb4934]#[bold] 󰣀 #h #[default],#{?TMUX,#[fg=#1d2021]#[bg=#8ec07c]#[bold] 󰪥 #[default],}}
