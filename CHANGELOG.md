@@ -4,6 +4,13 @@
 > For historical changes prior to the Gruvbox fork, see the
 > [upstream changelog](https://github.com/catppuccin/tmux/blob/main/CHANGELOG.md).
 
+## [3.3.0](https://github.com/ewhanhan/tmux-gruvbox/compare/v3.2.1...v3.3.0) (2026-06-23)
+
+
+### Added
+
+* **status:** add nest module for remote/nested session badge ([d87b075](https://github.com/ewhanhan/tmux-gruvbox/commit/d87b0753b8704d44e0266b01f7a53caef585ece3))
+
 ## [3.2.1](https://github.com/ewhanhan/tmux-gruvbox/compare/v3.2.0...v3.2.1) (2026-06-08)
 
 
